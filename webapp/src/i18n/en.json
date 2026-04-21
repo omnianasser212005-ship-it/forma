@@ -1,0 +1,11 @@
+{
+  "request_success": "✓ Request submitted successfully",
+  "request_error": "Error submitting request",
+  "company_formation": "Company Formation",
+  "smart_form_step_by_step": "Smart Form — Step by Step",
+  "full_name": "Full Name *",
+  "phone_number": "Phone Number *",
+  "email": "Email *",
+  "submit_request": "Submit Request ✓",
+  "fill_details_below": "Please fill in your details below to continue."
+}

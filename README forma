@@ -1,0 +1,159 @@
+# FORMA — LegalTech SaaS Platform
+## Deployment & Setup Guide
+
+---
+
+## 📁 File Structure
+
+```
+forma/
+├── index.html              ← Full frontend (single file)
+├── backend/
+│   └── Code.gs             ← Google Apps Script backend
+└── README.md               ← This file
+```
+
+---
+
+## 🚀 Step 1: Setup Google Sheets
+
+1. Go to [sheets.google.com](https://sheets.google.com) → Create new spreadsheet
+2. Name it **"FORMA Database"**
+3. Copy the **Sheet ID** from the URL:
+   ```
+   https://docs.google.com/spreadsheets/d/[THIS_IS_YOUR_SHEET_ID]/edit
+   ```
+
+---
+
+## 🗂 Step 2: Setup Google Drive Folder
+
+1. Go to [drive.google.com](https://drive.google.com) → New → Folder
+2. Name it **"FORMA Uploads"**
+3. Right-click the folder → Get link → Copy folder ID from URL:
+   ```
+   https://drive.google.com/drive/folders/[THIS_IS_YOUR_FOLDER_ID]
+   ```
+4. Share the folder so the script can write to it
+
+---
+
+## ⚙️ Step 3: Deploy Google Apps Script
+
+1. Open your Google Sheet → **Extensions → Apps Script**
+2. Delete existing code → Paste entire contents of `backend/Code.gs`
+3. Update the config at the top:
+   ```javascript
+   const SHEET_ID = 'paste-your-sheet-id-here';
+   const DRIVE_FOLDER_ID = 'paste-your-folder-id-here';
+   const ADMIN_EMAIL = 'your-email@domain.com';
+   ```
+4. **Run** `initializeSheets()` once (click the function dropdown → Run)
+   - Grant required permissions when prompted
+5. **Deploy → New Deployment**:
+   - Type: **Web App**
+   - Execute as: **Me**
+   - Who has access: **Anyone**
+   - Click **Deploy**
+6. Copy the **Deployment URL** — it looks like:
+   ```
+   https://script.google.com/macros/s/AKfycb.../exec
+   ```
+
+---
+
+## 🔗 Step 4: Connect Frontend
+
+1. Open `index.html` in a text editor
+2. Find line near top of `<script>`:
+   ```javascript
+   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+   ```
+3. Replace with your actual deployment URL from Step 3
+
+---
+
+## 🌐 Step 5: Deploy Frontend
+
+### Option A: GitHub Pages (Free)
+1. Create a GitHub repository
+2. Upload `index.html` to the repo root
+3. Settings → Pages → Source: main branch
+4. Your site: `https://username.github.io/repository-name`
+
+### Option B: Netlify (Free, Custom Domain)
+1. Go to [netlify.com](https://netlify.com)
+2. Drag & drop the `forma/` folder
+3. Get instant URL + custom domain support
+
+### Option C: Vercel (Free)
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run `vercel` in the `forma/` directory
+
+### Option D: Traditional Hosting
+- Upload `index.html` to any web server (cPanel, AWS S3, etc.)
+
+---
+
+## 📋 Google Sheets Structure
+
+After running `initializeSheets()`, you'll have 3 tabs:
+
+### Users Tab
+| ID | Name | Phone | Email | Company | Age | Created At | Status |
+|----|------|-------|-------|---------|-----|------------|--------|
+
+### ServiceRequests Tab
+| Request ID | Service | Name | Phone | Email | Age | Company | Company Type | Activity | Capital | File URLs | Files Count | Status | Submitted At | Notes |
+|------------|---------|------|-------|-------|-----|---------|--------------|----------|---------|-----------|-------------|--------|--------------|-------|
+
+### Logs Tab
+| Timestamp | Action | Message |
+|-----------|--------|---------|
+
+---
+
+## 🔒 Security Checklist
+
+- [ ] Keep Google Sheet private (only you have edit access)
+- [ ] Set Apps Script to execute as "Me" (not as user)
+- [ ] Add CORS restrictions if needed
+- [ ] Enable 2FA on your Google account
+- [ ] Regularly export Sheet data as backup
+
+---
+
+## 🌍 Language Support
+
+The app supports Arabic (RTL) and English (LTR).
+
+- Default: **Arabic**
+- Language is saved in `localStorage`
+- Switch via navbar AR/EN buttons
+
+---
+
+## 🎨 Customization
+
+### Change Colors
+In `index.html`, find `:root { ... }` and update:
+```css
+--accent: #C8A45D;          /* Gold accent — change to your brand color */
+--accent-blue: #3B82F6;     /* Blue accent */
+```
+
+### Add Services
+Find the `.services-grid-featured` section and add/modify cards.
+
+### Change Pricing
+Find the `.pricing-grid` section and update prices.
+
+---
+
+## 📞 Support
+
+For questions about setup, contact: support@yourforma.com
+
+---
+
+*Built with ❤️ — FORMA v1.0*

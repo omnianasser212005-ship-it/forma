@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMA — مسارك القانوني بكل بساطة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="light">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo">
+      <div class="logo-icon">📄</div>
+      <div class="logo-text-wrap">
+        <span class="logo-name">FORMA</span>
+        <span class="logo-sub" data-ar="مسارك القانوني بكل بساطة" data-en="Your Legal Journey, Simplified">مسارك القانوني بكل بساطة</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+      <li><a href="#pricing" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+      <li><a href="#how" data-ar="كيف يعمل" data-en="How It Works">كيف يعمل</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-ar">AR</button>
+        <button class="lang-btn" id="btn-en">EN</button>
+      </div>
+      <button class="theme-toggle" id="theme-btn" title="Toggle theme">🌙</button>
+      <button class="btn-login open-auth-btn" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</button>
+    </div>
+    <button class="hamburger" id="btn-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#services" class="mobile-nav-link" data-ar="الخدمات" data-en="Services">الخدمات</a>
+  <a href="#pricing" class="mobile-nav-link" data-ar="الأسعار" data-en="Pricing">الأسعار</a>
+  <a href="#how" class="mobile-nav-link" data-ar="كيف يعمل" data-en="How It Works">كيف يعمل</a>
+  <a href="#" class="mobile-nav-link open-auth-btn" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      <span data-ar="منصة موثوقة من آلاف الشركات في مصر" data-en="Trusted by thousands of businesses in Egypt">منصة موثوقة من آلاف الشركات في مصر</span>
+    </div>
+    <h1 class="hero-title">
+      <span data-ar="مسارك القانوني في مصر،" data-en="Your legal journey in Egypt,">مسارك القانوني في مصر،</span><br>
+      <span class="accent-line" data-ar="بدون تعقيدات" data-en="without complications">بدون تعقيدات</span>
+    </h1>
+    <p class="hero-sub" data-ar="منصة قانونية ذكية تساعد الأفراد والشركات على إنهاء إجراءاتهم القانونية بسرعة وسهولة — من تأسيس الشركات إلى حماية علامتك التجارية." data-en="A smart legal platform helping individuals and businesses complete their legal procedures quickly and easily — from company formation to brand protection.">منصة قانونية ذكية تساعد الأفراد والشركات على إنهاء إجراءاتهم القانونية بسرعة وسهولة — من تأسيس الشركات إلى حماية علامتك التجارية.</p>
+    <div class="hero-cta-row">
+      <button class="btn-primary" id="btn-scroll-services">
+        <span data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</span>
+        <span>←</span>
+      </button>
+      <button class="btn-secondary" id="btn-scroll-how">
+        <span data-ar="كيف يعمل؟" data-en="How it works?">كيف يعمل؟</span>
+      </button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">+3,200</div><div class="stat-label" data-ar="شركة تأسست" data-en="Companies Formed">شركة تأسست</div></div>
+      <div class="stat-item"><div class="stat-num">98%</div><div class="stat-label" data-ar="نسبة رضا العملاء" data-en="Client Satisfaction">نسبة رضا العملاء</div></div>
+      <div class="stat-item"><div class="stat-num">72hrs</div><div class="stat-label" data-ar="متوسط وقت الإنجاز" data-en="Average Completion">متوسط وقت الإنجاز</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label" data-ar="حفظ وأمان" data-en="Secure & Safe">حفظ وأمان</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<div class="divider"></div>
+<section class="services" id="services">
+  <div class="services-header reveal">
+    <div class="section-label" data-ar="خدماتنا" data-en="Services">خدماتنا</div>
+    <h2 class="section-title" data-ar="كل ما تحتاجه في مكان واحد" data-en="Everything you need in one place">كل ما تحتاجه في مكان واحد</h2>
+    <p class="section-sub" data-ar="خدمات قانونية متكاملة مصممة للأفراد والشركات في مصر" data-en="Comprehensive legal services designed for individuals and businesses in Egypt">خدمات قانونية متكاملة مصممة للأفراد والشركات في مصر</p>
+  </div>
+  
+  <div class="services-grid-featured reveal">
+    <div class="service-card dark open-service-form" data-name-ar="تأسيس الشركات" data-name-en="Company Formation">
+      <div class="service-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+      <div class="service-tag" data-ar="أعمال" data-en="Business">أعمال</div>
+      <div class="service-icon">🏛️</div>
+      <div class="service-title" data-ar="تأسيس الشركات" data-en="Company Formation">تأسيس الشركات</div>
+      <div class="service-sub" data-ar="تأسيس شركتك بالكامل — من التوثيق حتى السجل التجاري — في أقل من أسبوع." data-en="Full company incorporation — from documentation to commercial registry — in under a week.">تأسيس شركتك بالكامل — من التوثيق حتى السجل التجاري — في أقل من أسبوع.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 3,500 جنيه" data-en="From EGP 3,500">من 3,500 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+    
+    <div class="service-card dark open-service-form" data-name-ar="البطاقة الضريبية" data-name-en="Tax Card">
+      <div class="service-tag" data-ar="ضريبي" data-en="Tax">ضريبي</div>
+      <div class="service-icon">🪪</div>
+      <div class="service-title" data-ar="البطاقة الضريبية" data-en="Tax Card">البطاقة الضريبية</div>
+      <div class="service-sub" data-ar="استخراج البطاقة الضريبية وتسجيلك في منظومة الضرائب المصرية بشكل سريع وصحيح." data-en="Obtain your tax card and register in Egypt's tax system quickly and correctly.">استخراج البطاقة الضريبية وتسجيلك في منظومة الضرائب المصرية بشكل سريع وصحيح.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 1,200 جنيه" data-en="From EGP 1,200">من 1,200 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="service-card dark open-service-form" data-name-ar="عقد تأسيس" data-name-en="Incorporation Agreement">
+      <div class="service-tag" data-ar="قانوني" data-en="Legal">قانوني</div>
+      <div class="service-icon">📜</div>
+      <div class="service-title" data-ar="عقد تأسيس" data-en="Incorporation Agreement">عقد تأسيس</div>
+      <div class="service-sub" data-ar="صياغة عقد التأسيس الرسمي وتوثيقه لدى الجهات المختصة مع مراجعة قانونية كاملة." data-en="Draft and notarize the official incorporation agreement with complete legal review.">صياغة عقد التأسيس الرسمي وتوثيقه لدى الجهات المختصة مع مراجعة قانونية كاملة.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 2,000 جنيه" data-en="From EGP 2,000">من 2,000 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="service-card dark open-service-form" data-name-ar="استخراج التوكيلات الذكية" data-name-en="Smart Power of Attorney">
+      <div class="service-tag" data-ar="توثيق" data-en="Notary">توثيق</div>
+      <div class="service-icon">✍️</div>
+      <div class="service-title" data-ar="استخراج التوكيلات الذكية" data-en="Smart Power of Attorney">استخراج التوكيلات الذكية</div>
+      <div class="service-sub" data-ar="استخراج التوكيلات الرسمية بشكل ذكي وسريع مع ضمان صحة الإجراءات." data-en="Obtain official power of attorney documents intelligently and quickly.">استخراج التوكيلات الرسمية بشكل ذكي وسريع مع ضمان صحة الإجراءات.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 800 جنيه" data-en="From EGP 800">من 800 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-grid-secondary reveal">
+    <div class="service-card light open-service-form" data-name-ar="الترخيص التجاري" data-name-en="Commercial License">
+      <div class="service-tag" data-ar="ترخيص" data-en="License">ترخيص</div>
+      <div class="service-icon">🏪</div>
+      <div class="service-title" data-ar="الترخيص التجاري" data-en="Commercial License">الترخيص التجاري</div>
+      <div class="service-sub" data-ar="الحصول على الترخيص التجاري المناسب لنشاطك." data-en="Obtain the right commercial license for your business.">الحصول على الترخيص التجاري المناسب لنشاطك.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 1,800 جنيه" data-en="From EGP 1,800">من 1,800 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="service-card light open-service-form" data-name-ar="الفاتورة الإلكترونية" data-name-en="E-Invoice System">
+      <div class="service-tag" data-ar="ضريبي" data-en="Tax">ضريبي</div>
+      <div class="service-icon">🧾</div>
+      <div class="service-title" data-ar="الفاتورة الإلكترونية" data-en="E-Invoice System">الفاتورة الإلكترونية</div>
+      <div class="service-sub" data-ar="تسجيل ودمج منظومة الفاتورة الإلكترونية مع نظامك." data-en="Register and integrate the e-invoice system with your setup.">تسجيل ودمج منظومة الفاتورة الإلكترونية مع نظامك.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 2,500 جنيه" data-en="From EGP 2,500">من 2,500 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="service-card light open-service-form" data-name-ar="حماية العلامة التجارية" data-name-en="Trademark Protection">
+      <div class="service-tag" data-ar="حماية" data-en="Protection">حماية</div>
+      <div class="service-icon">™️</div>
+      <div class="service-title" data-ar="حماية العلامة التجارية" data-en="Trademark Protection">حماية العلامة التجارية</div>
+      <div class="service-sub" data-ar="تسجيل وحماية علامتك التجارية في مصر والخارج." data-en="Register and protect your trademark in Egypt and abroad.">تسجيل وحماية علامتك التجارية في مصر والخارج.</div>
+      <div class="service-footer">
+        <span class="service-price" data-ar="من 4,000 جنيه" data-en="From EGP 4,000">من 4,000 جنيه</span>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<div class="divider"></div>
+<section class="how-it-works" id="how">
+  <div class="services-header reveal">
+    <div class="section-label" data-ar="العملية" data-en="Process">العملية</div>
+    <h2 class="section-title" data-ar="ثلاث خطوات فقط" data-en="Just Three Steps">ثلاث خطوات فقط</h2>
+    <p class="section-sub" data-ar="نجعل الأمر بسيطاً قدر المستطاع" data-en="We make it as simple as possible">نجعل الأمر بسيطاً قدر المستطاع</p>
+  </div>
+  <div class="how-grid reveal">
+    <div class="how-card">
+      <div class="how-num">01</div><div class="how-icon">📝</div>
+      <div class="how-title" data-ar="اختر خدمتك" data-en="Choose Your Service">اختر خدمتك</div>
+      <div class="how-desc" data-ar="اختر الخدمة المناسبة واملأ النموذج الذكي ببياناتك بدون عناء." data-en="Choose the right service and fill the smart form with your details effortlessly.">اختر الخدمة المناسبة واملأ النموذج الذكي ببياناتك بدون عناء.</div>
+    </div>
+    <div class="how-card">
+      <div class="how-num">02</div><div class="how-icon">📎</div>
+      <div class="how-title" data-ar="ارفع المستندات" data-en="Upload Documents">ارفع المستندات</div>
+      <div class="how-desc" data-ar="ارفع مستنداتك بأمان — صور أو PDF — ونحفظها في مكان محمي." data-en="Upload your documents securely — photos or PDFs — and we store them safely.">ارفع مستنداتك بأمان — صور أو PDF — ونحفظها في مكان محمي.</div>
+    </div>
+    <div class="how-card">
+      <div class="how-num">03</div><div class="how-icon">✅</div>
+      <div class="how-title" data-ar="نُنجز لك" data-en="We Deliver">نُنجز لك</div>
+      <div class="how-desc" data-ar="يتولى فريقنا القانوني إتمام الإجراءات ونبلغك فور الانتهاء." data-en="Our legal team handles the procedures and notifies you upon completion.">يتولى فريقنا القانوني إتمام الإجراءات ونبلغك فور الانتهاء.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<div class="divider"></div>
+<section class="pricing" id="pricing">
+  <div class="pricing-header reveal">
+    <div class="section-label" data-ar="الأسعار" data-en="Pricing">الأسعار</div>
+    <h2 class="section-title" data-ar="اختر الخطة المناسبة" data-en="Choose Your Plan">اختر الخطة المناسبة</h2>
+    <p class="section-sub" data-ar="أسعار شفافة بدون رسوم مخفية" data-en="Transparent pricing with no hidden fees">أسعار شفافة بدون رسوم مخفية</p>
+  </div>
+  <div class="pricing-grid reveal">
+    <!-- Starter -->
+    <div class="price-card">
+      <div class="price-plan" data-ar="أساسي" data-en="Starter">أساسي</div>
+      <div class="price-amount">2,500<span data-ar=" جنيه" data-en=" EGP"> جنيه</span></div>
+      <div class="price-desc" data-ar="للأفراد والمشاريع الصغيرة" data-en="For individuals and small ventures">للأفراد والمشاريع الصغيرة</div>
+      <ul class="price-features">
+        <li data-ar="خدمة واحدة" data-en="Single service">خدمة واحدة</li>
+        <li data-ar="دعم بالبريد الإلكتروني" data-en="Email support">دعم بالبريد الإلكتروني</li>
+        <li data-ar="تتبع الطلب" data-en="Request tracking">تتبع الطلب</li>
+        <li data-ar="تسليم خلال 7 أيام" data-en="7-day delivery">تسليم خلال 7 أيام</li>
+      </ul>
+      <button class="btn-plan open-auth-btn" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</button>
+    </div>
+
+    <!-- Pro -->
+    <div class="price-card featured">
+      <div class="price-popular" data-ar="الأكثر شيوعاً" data-en="Most Popular">الأكثر شيوعاً</div>
+      <div class="price-plan" data-ar="احترافي" data-en="Professional">احترافي</div>
+      <div class="price-amount">6,800<span data-ar=" جنيه" data-en=" EGP"> جنيه</span></div>
+      <div class="price-desc" data-ar="للشركات الناشئة والمتوسطة" data-en="For startups and medium businesses">للشركات الناشئة والمتوسطة</div>
+      <ul class="price-features">
+        <li data-ar="حتى 3 خدمات" data-en="Up to 3 services">حتى 3 خدمات</li>
+        <li data-ar="دعم على مدار الساعة" data-en="24/7 support">دعم على مدار الساعة</li>
+        <li data-ar="مستشار قانوني مخصص" data-en="Dedicated legal advisor">مستشار قانوني مخصص</li>
+        <li data-ar="تسليم خلال 3 أيام" data-en="3-day delivery">تسليم خلال 3 أيام</li>
+        <li data-ar="مراجعة العقود" data-en="Contract review">مراجعة العقود</li>
+      </ul>
+      <button class="btn-plan open-auth-btn" data-ar="ابدأ الآن" data-en="Get Started">ابدأ الآن</button>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="price-card">
+      <div class="price-plan" data-ar="مؤسسي" data-en="Enterprise">مؤسسي</div>
+      <div class="price-amount" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</div>
+      <div class="price-desc" data-ar="للشركات الكبيرة والمجموعات" data-en="For large companies and groups">للشركات الكبيرة والمجموعات</div>
+      <ul class="price-features">
+        <li data-ar="خدمات غير محدودة" data-en="Unlimited services">خدمات غير محدودة</li>
+        <li data-ar="فريق قانوني متكامل" data-en="Full legal team">فريق قانوني متكامل</li>
+        <li data-ar="SLA مضمون" data-en="Guaranteed SLA">SLA مضمون</li>
+        <li data-ar="تقارير شهرية" data-en="Monthly reports">تقارير شهرية</li>
+        <li data-ar="عقد سنوي" data-en="Annual contract">عقد سنوي</li>
+      </ul>
+      <button class="btn-plan open-auth-btn" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-box">📄</div>
+        <span class="footer-logo-name">FORMA</span>
+      </div>
+      <p class="footer-desc" data-ar="مسارك القانوني في مصر — بدون تعقيدات. نجعل الإجراءات القانونية بسيطة وسريعة وموثوقة." data-en="Your legal journey in Egypt — without complications. We make legal procedures simple, fast, and reliable.">مسارك القانوني في مصر — بدون تعقيدات.</p>
+    </div>
+    <div>
+      <div class="footer-col-title" data-ar="الخدمات" data-en="Services">الخدمات</div>
+      <ul class="footer-links">
+        <li><a href="#" data-ar="تأسيس الشركات" data-en="Company Formation">تأسيس الشركات</a></li>
+        <li><a href="#" data-ar="البطاقة الضريبية" data-en="Tax Card">البطاقة الضريبية</a></li>
+        <li><a href="#" data-ar="عقد التأسيس" data-en="Incorporation Agreement">عقد التأسيس</a></li>
+        <li><a href="#" data-ar="حماية العلامة" data-en="Trademark">حماية العلامة</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title" data-ar="الشركة" data-en="Company">الشركة</div>
+      <ul class="footer-links">
+        <li><a href="#" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="#" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+        <li><a href="#" data-ar="الوظائف" data-en="Careers">الوظائف</a></li>
+        <li><a href="#" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title" data-ar="قانوني" data-en="Legal">قانوني</div>
+      <ul class="footer-links">
+        <li><a href="#" data-ar="الشروط والأحكام" data-en="Terms">الشروط والأحكام</a></li>
+        <li><a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a></li>
+        <li><a href="#" data-ar="الأمان" data-en="Security">الأمان</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy" data-ar="© 2024 FORMA. جميع الحقوق محفوظة." data-en="© 2024 FORMA. All rights reserved.">© 2024 FORMA. جميع الحقوق محفوظة.</span>
+    <div class="footer-socials">
+      <a href="#" class="footer-social-btn">𝕏</a>
+      <a href="#" class="footer-social-btn">in</a>
+      <a href="#" class="footer-social-btn">f</a>
+    </div>
+  </div>
+</footer>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="auth-modal-overlay">
+  <div class="modal" id="auth-modal" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <div class="modal-title" data-ar="مرحباً في FORMA" data-en="Welcome to FORMA">مرحباً في FORMA</div>
+        <div class="modal-subtitle" data-ar="أنشئ حسابك أو سجّل الدخول للمتابعة" data-en="Create your account or log in to continue">أنشئ حسابك أو سجّل الدخول للمتابعة</div>
+      </div>
+      <button class="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <!-- Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-login" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</button>
+        <button class="auth-tab" id="tab-signup" data-ar="إنشاء حساب" data-en="Sign Up">إنشاء حساب</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="auth-login-form">
+        <div class="field-group">
+          <label class="field-label" data-ar="رقم الهاتف أو البريد الإلكتروني" data-en="Phone or Email">رقم الهاتف أو البريد الإلكتروني</label>
+          <input type="text" class="field-input" id="login-identifier" placeholder="01XXXXXXXXX">
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="كلمة المرور" data-en="Password">كلمة المرور</label>
+          <input type="password" class="field-input" id="login-password" placeholder="••••••••">
+        </div>
+        <div class="security-badge">
+          <span>🔒</span>
+          <span data-ar="بياناتك محفوظة وآمنة تماماً" data-en="Your data is completely saved and secure">بياناتك محفوظة وآمنة تماماً</span>
+        </div>
+        <button class="btn-submit" id="btn-login-submit">
+          <span data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</span>
+        </button>
+        <div class="form-message" id="login-message"></div>
+      </div>
+
+      <!-- Signup Form -->
+      <div id="auth-signup-form" class="hidden-block">
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" data-ar="الاسم الكامل *" data-en="Full Name *">الاسم الكامل *</label>
+            <input type="text" class="field-input signup-val" id="signup-name" placeholder="محمد أحمد">
+            <span class="field-error" data-ar="الاسم مطلوب" data-en="Name is required">الاسم مطلوب</span>
+          </div>
+          <div class="field-group">
+            <label class="field-label" data-ar="العمر *" data-en="Age *">العمر *</label>
+            <input type="number" class="field-input signup-val" id="signup-age" placeholder="25" min="18" max="99">
+            <span class="field-error" data-ar="يجب أن يكون 18+ سنة" data-en="Must be 18+ years">يجب أن يكون 18+ سنة</span>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="رقم الهاتف (مصري) *" data-en="Phone Number (Egyptian) *">رقم الهاتف (مصري) *</label>
+          <input type="tel" class="field-input signup-val" id="signup-phone" placeholder="01XXXXXXXXX">
+          <span class="field-error" data-ar="رقم مصري غير صالح (يبدأ بـ 01)" data-en="Invalid Egyptian number (starts with 01)">رقم مصري غير صالح</span>
+          <span class="field-hint" data-ar="مثال: 01012345678" data-en="Example: 01012345678">مثال: 01012345678</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="البريد الإلكتروني *" data-en="Email *">البريد الإلكتروني *</label>
+          <input type="email" class="field-input signup-val" id="signup-email" placeholder="email@example.com">
+          <span class="field-error" data-ar="بريد إلكتروني غير صالح" data-en="Invalid email address">بريد إلكتروني غير صالح</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="اسم الشركة *" data-en="Company Name *">اسم الشركة *</label>
+          <input type="text" class="field-input signup-val" id="signup-company" placeholder="شركة X للتجارة">
+          <span class="field-error" data-ar="اسم الشركة مطلوب" data-en="Company name is required">اسم الشركة مطلوب</span>
+        </div>
+        <div class="security-badge">
+          <span>🔒</span>
+          <span data-ar="بياناتك محفوظة وآمنة — نستخدم تشفير SSL" data-en="Your data is saved and secure — we use SSL encryption">بياناتك محفوظة وآمنة — نستخدم تشفير SSL</span>
+        </div>
+        <button class="btn-submit" id="btn-signup-submit" disabled>
+          <span data-ar="إنشاء الحساب" data-en="Create Account">إنشاء الحساب</span>
+        </button>
+        <div class="form-message" id="signup-message"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE FORM MODAL -->
+<div class="modal-overlay" id="service-modal-overlay">
+  <div class="modal modal-form" id="service-modal" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <div class="modal-title" id="service-modal-title">تأسيس الشركات</div>
+        <div class="modal-subtitle" data-ar="نموذج ذكي — خطوة بخطوة" data-en="Smart Form — Step by Step">نموذج ذكي — خطوة بخطوة</div>
+      </div>
+      <button class="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <!-- Steps Progress -->
+      <div class="steps-progress" id="steps-progress">
+        <div>
+          <div class="step-dot active" id="sdot-1">1</div>
+        </div>
+        <div class="step-line" id="sline-1"></div>
+        <div>
+          <div class="step-dot" id="sdot-2">2</div>
+        </div>
+        <div class="step-line" id="sline-2"></div>
+        <div>
+          <div class="step-dot" id="sdot-3">3</div>
+        </div>
+      </div>
+      <div class="steps-labels">
+        <span class="step-label-text" data-ar="بياناتك الشخصية" data-en="Personal Info">بياناتك الشخصية</span>
+        <span class="step-label-text" data-ar="بيانات الشركة" data-en="Company Info">بيانات الشركة</span>
+        <span class="step-label-text" data-ar="المستندات" data-en="Documents">المستندات</span>
+      </div>
+
+      <!-- Step 1: Personal Info -->
+      <div class="step-panel active" id="step-1">
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" data-ar="الاسم الكامل *" data-en="Full Name *">الاسم الكامل *</label>
+            <input type="text" class="field-input" id="sf-name" placeholder="محمد أحمد">
+          </div>
+          <div class="field-group">
+            <label class="field-label" data-ar="العمر *" data-en="Age *">العمر *</label>
+            <input type="number" class="field-input" id="sf-age" placeholder="25" min="18">
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="رقم الهاتف *" data-en="Phone Number *">رقم الهاتف *</label>
+          <input type="tel" class="field-input" id="sf-phone" placeholder="01XXXXXXXXX">
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="البريد الإلكتروني *" data-en="Email *">البريد الإلكتروني *</label>
+          <input type="email" class="field-input" id="sf-email" placeholder="email@example.com">
+        </div>
+        <div class="step-nav">
+          <div></div>
+          <button class="btn-next" id="btn-go-step-2">
+            <span data-ar="التالي ←" data-en="Next →">التالي ←</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Company Info -->
+      <div class="step-panel" id="step-2">
+        <div class="field-group">
+          <label class="field-label" data-ar="اسم الشركة *" data-en="Company Name *">اسم الشركة *</label>
+          <input type="text" class="field-input" id="sf-company" placeholder="شركة X للتجارة والتوزيع">
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="نوع الشركة *" data-en="Company Type *">نوع الشركة *</label>
+          <select class="field-select" id="sf-company-type">
+            <option value="" data-ar="اختر نوع الشركة..." data-en="Select company type...">اختر نوع الشركة...</option>
+            <option value="llc" data-ar="شركة ذات مسؤولية محدودة" data-en="LLC">شركة ذات مسؤولية محدودة</option>
+            <option value="jsc" data-ar="شركة مساهمة" data-en="Joint Stock Company">شركة مساهمة</option>
+            <option value="sole" data-ar="مؤسسة فردية" data-en="Sole Proprietorship">مؤسسة فردية</option>
+            <option value="partnership" data-ar="شركة تضامن" data-en="Partnership">شركة تضامن</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="نشاط الشركة *" data-en="Business Activity *">نشاط الشركة *</label>
+          <input type="text" class="field-input" id="sf-activity" placeholder="تجارة الجملة والتجزئة">
+        </div>
+        <div class="field-group">
+          <label class="field-label" data-ar="رأس المال المبدئي *" data-en="Initial Capital *">رأس المال المبدئي *</label>
+          <input type="number" class="field-input" id="sf-capital" placeholder="50000">
+          <span class="field-hint" data-ar="بالجنيه المصري — الحد الأدنى 1,0000 جنيه" data-en="In EGP — minimum EGP 1,0000">بالجنيه المصري — الحد الأدنى 1,0000 جنيه لسهول</span>
+        </div>
+        <div class="step-nav">
+          <button class="btn-back" id="btn-back-step-1" data-ar="→ رجوع" data-en="← Back">→ رجوع</button>
+          <button class="btn-next" id="btn-go-step-3" data-ar="التالي ←" data-en="Next →">التالي ←</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Documents -->
+      <div class="step-panel" id="step-3">
+        <p class="step-docs-hint" data-ar=" صورة البطاقة الشخصية امام وخلف _ و توكيل رسمي _وعقد ايجار_ وايصال كهرباءومياه _PDF أو صورة (JPG/PNG)" data-en="Upload national ID photo face & back and Power of Attorney & Lease contract & Electricity Bill & Water Bill  in PDF or image format (JPG/PNG)">ارفع صورة البطاقة الشخصية والمستندات المطلوبة بصيغة PDF أو صورة</p>
+
+        <div class="file-drop" id="file-drop-zone">
+          <input type="file" id="file-input" multiple accept=".pdf,.jpg,.jpeg,.png">
+          <div class="file-drop-icon">📂</div>
+          <div class="file-drop-text" data-ar="اسحب الملفات هنا أو انقر للرفع" data-en="Drag files here or click to upload">اسحب الملفات هنا أو انقر للرفع</div>
+          <div class="file-drop-hint" data-ar="PDF, JPG, PNG — حجم أقصى 10MB لكل ملف" data-en="PDF, JPG, PNG — max 10MB per file">PDF, JPG, PNG — حجم أقصى 10MB لكل ملف</div>
+        </div>
+        <div class="file-list" id="file-list"></div>
+
+        <div class="step-nav">
+          <button class="btn-back" id="btn-back-step-2" data-ar="→ رجوع" data-en="← Back">→ رجوع</button>
+          <button class="btn-submit btn-submit-auto" id="btn-service-submit">
+            <span data-ar="إرسال الطلب ✓" data-en="Submit Request ✓">إرسال الطلب ✓</span>
+          </button>
+        </div>
+        <div class="form-message" id="service-message"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<!-- Scripts -->
+<script src="js/ui.js"></script>
+<script src="js/formHandler.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

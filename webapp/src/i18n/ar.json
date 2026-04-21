@@ -1,0 +1,11 @@
+{
+  "request_success": "✓ تم إرسال طلبك بنجاح",
+  "request_error": "حدث خطأ أثناء إرسال الطلب",
+  "company_formation": "تأسيس الشركات",
+  "smart_form_step_by_step": "نموذج ذكي — خطوة بخطوة",
+  "full_name": "الاسم الكامل *",
+  "phone_number": "رقم الهاتف *",
+  "email": "البريد الإلكتروني *",
+  "submit_request": "إرسال الطلب ✓",
+  "fill_details_below": "يرجى تعبئة تفاصيلك أدناه لمتابعة الإجراءات."
+}
